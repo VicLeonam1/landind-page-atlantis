@@ -15,7 +15,7 @@
 
 /* Imagem de fundo */
 #atlantis{
-    width: 500px;
+    width: 600px;
 }
 
 #imagem {
@@ -68,7 +68,7 @@ h1,h2{
     width: 60%; 
     height: 100%;
     background-color: #D9D9D9; 
-    clip-path: polygon(0% 0, 63% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0% 0, 75% 0, 98% 126%, 0 190%);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-flow: column nowrap;
@@ -100,7 +100,7 @@ h1,h2{
     color: white;
     transition: .2s;
     cursor: pointer;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 .overlay .botao button:hover{
@@ -123,8 +123,8 @@ h1,h2{
 }
 
 .overlay .redes-sociais img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transition: .2s;
     cursor: pointer;
 }
