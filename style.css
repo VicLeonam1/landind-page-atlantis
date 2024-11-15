@@ -3,7 +3,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     font-family: "Poppins", serif;
+}
+
+body{
+    background-color: #D9D9D9;
 }
 
 .container {
@@ -43,7 +48,7 @@ header nav ul li{
 
 header nav ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3vw;
     color: white;
 }
 
@@ -121,15 +126,16 @@ h1,h2{
 
 .overlay .botao{
     display: flex;
-    align-items: center; 
+    align-items: center;
+    height: 20vh; 
     width: 100%;
     transform: translate(0, 100%);
 }
 
 .overlay .botao button{
-    font-size: 2vw;
+    font-size: 1.8vw;
     padding: 15px;
-    border-radius: 30px;
+    border-radius: 50px;
     margin-left: auto;
     margin-right: 16%;
     border: none;
@@ -165,3 +171,69 @@ h1,h2{
 .overlay .redes-sociais img:hover{
     transform: scale(1.2);
 }
+
+section.empresas{
+    margin: 40px 0;
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-image: linear-gradient(to right, #D9D9D9, transparent);
+    content: "";
+    z-index: 88;
+}
+.logos::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-image: linear-gradient(to left, #D9D9D9, transparent);
+    content: "";
+    z-index: 88;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: slide 35s infinite linear;
+}
+
+.logo-empresa {
+    margin: 0 40px;
+    width: 140px;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #979797;
+    border-radius: 10px;
+  }
+  
+  
