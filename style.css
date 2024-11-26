@@ -158,18 +158,21 @@ h1,h2{
     display: flex;
     flex-flow: row nowrap;
     padding-left: 9%;
-    gap: 20px;
+    gap: 15px;
 }
 
 .overlay .redes-sociais a img{
     display: block;
     width: 3vw;
+    margin: 5px;
     transition: .2s;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .overlay .redes-sociais img:hover{
     transform: scale(1.2);
+    transform-origin: center center;
 }
 
 section.empresas{
