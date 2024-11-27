@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=change_history" />
     <!--Fontes-->
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -21,9 +23,17 @@
                 <li><a href="">Home</a></li>
                 <li><a href="">Sobre</a></li>
                 <li><a href="">Cadastrar-se</a></li>
+                <li><a href="">Governança</a></li>
+                <li><a href="">Projetos</a></li>
                 <li><a href="">Contato</a></li>
             </ul>
         </nav>
+        <div class="idioma">
+            <img src="assets/images/portugues.png" alt="">
+            <span class="material-symbols-outlined">
+                change_history
+                </span>
+        </div>
     </header>
     <main>
         <section id="home">
@@ -56,7 +66,21 @@
             </div>
         </section>
 
+        <section class="sobre">
+            <div class="importacao padrao">
+                <img src="assets/images/importacao.png" alt="">
+                <h2>Importação</h2>
+                <p>realizamos a importação de mercadorias e matérias-primas de mercados internacionais para atender às necessidades locais com eficiência.</p>
+            </div>
+            <div class="exportacao padrao">
+                <img src="assets/images/exportacao.png" alt="">
+                <h2>Exportação</h2>
+                <p> serviços completos de exportação, ajudando empresas a levar seus produtos ao mercado global.</p>
+            </div>
+        </section>
+
         <section class="empresas">
+            <h1>Empresas parceiras</h1>
             <div class="logos">
                 <div class="logos-slide">
                     <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
@@ -80,6 +104,16 @@
                 </div>
             </div>
         </section>
+
+        <section id="contato">
+            <h1>Fale conosco!</h1>
+            <form action="">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Como podemos ajudar? Escreva sua mensagem."></textarea>
+            </form>
+        </section>
+
     </main>   
 </body>
 </html>

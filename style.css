@@ -32,8 +32,8 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 6;
-    background-color: rgba(0, 0, 0, 0.123);
+    z-index: 9999999999999;
+    background-color: rgba(0, 0, 0, 0.432);
 }
 
 header nav ul{
@@ -50,11 +50,22 @@ header nav ul li a {
     text-decoration: none;
     font-size: 1.3vw;
     color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 header nav ul li:hover{
     transform: scale(1.2);
 
+}
+
+header div.idioma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.idioma img{
+    width: 50px;
 }
 
 /* Imagem de fundo */
@@ -63,7 +74,7 @@ header nav ul li:hover{
 }
 
 #imagem {
-    background: url("assets/images/aerial-view-container-cargo-ship-sea.jpg") no-repeat  center / cover;
+    background: url("assets/images/naviocargueiro.jpg") no-repeat  center / cover;
     width: 70%;
     height: 100%;
     position: absolute;
@@ -163,7 +174,7 @@ h1,h2{
 
 .overlay .redes-sociais a img{
     display: block;
-    width: 3vw;
+    width: 70px;
     margin: 5px;
     transition: .2s;
     cursor: pointer;
@@ -171,12 +182,54 @@ h1,h2{
 }
 
 .overlay .redes-sociais img:hover{
-    transform: scale(1.2);
-    transform-origin: center center;
+    transform: scale(1.1);
 }
+
+section.sobre{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    background: url('assets/images/aviao.png') no-repeat center center / cover;
+}
+
+.padrao{
+    width: 500px;
+    color:#00A859;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.padrao h2{
+    font-weight: bold;
+}
+
+.padrao p{
+    color: white;
+}
+
+.padrao img{
+    width: 300px;
+}
+
 
 section.empresas{
     margin: 40px 0;
+}
+
+.empresas h1{
+    text-align: center;
+    font-weight: bold;
+    color: #343434;
+    font-size: 60px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
 }
 
 .logos {
@@ -190,7 +243,7 @@ section.empresas{
     position: absolute;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 500px;
     height: 100%;
     background-image: linear-gradient(to right, #D9D9D9, transparent);
     content: "";
@@ -200,7 +253,7 @@ section.empresas{
     position: absolute;
     top: 0;
     right: 0;
-    width: 250px;
+    width: 500px;
     height: 100%;
     background-image: linear-gradient(to left, #D9D9D9, transparent);
     content: "";
@@ -209,7 +262,7 @@ section.empresas{
 
 .logos-slide {
     display: inline-block;
-    animation: slide 35s infinite linear;
+    animation: slide 60s infinite linear;
 }
 
 .logo-empresa {
@@ -224,6 +277,55 @@ section.empresas{
     to{
         transform: translateX(-100%);
     }
+}
+
+#contato{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: url('assets/images/contato.png') no-repeat center center / cover;
+    height: 800px;
+}
+
+#contato form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    margin: 30px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+
+#contato h1{
+    overflow: hidden;
+    margin-top: 30px;
+    font-size: 50px;
+    color: #00A859;
+    font-weight: bold;
+}
+
+#contato form input{
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #D9D9D9;
+    font-weight: bold;
+}
+
+
+#contato form textarea{
+    background-color: #C9C9C9;
+    resize: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#contato form textarea::placeholder{
+    font-size: 20px;
 }
 
 ::-webkit-scrollbar {
