@@ -25,11 +25,11 @@
                 <li><a href="">Cadastrar-se</a></li>
                 <li><a href="">Governança</a></li>
                 <li><a href="">Projetos</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="idioma">
-            <img src="assets/images/portugues.png" alt="">
+            <p><img src="assets/images/portugues.png" alt="">PT-BR</p>
             <span class="material-symbols-outlined">
                 change_history
                 </span>
@@ -106,12 +106,15 @@
         </section>
 
         <section id="contato">
-            <h1>Fale conosco!</h1>
-            <form action="">
-                <input type="text" name="nome" id="nome" placeholder="Nome">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Como podemos ajudar? Escreva sua mensagem."></textarea>
-            </form>
+            <div class="interface">
+                <h1>Fale conosco!</h1>
+                <form action="">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Como podemos ajudar? Escreva sua mensagem." required></textarea>
+                    <input type="submit" value="Enviar" id="enviar">
+                </form>
+            </div>
         </section>
 
     </main>   
