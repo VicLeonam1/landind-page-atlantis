@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Fontes-->
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=change_history" />
-    <!--Fontes-->
+
+    <!-- Favicon e CSS -->
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <title>Atlantis Commodities</title>
 </head>
 <body>
     <header>
         <img src="assets/images/Atlantis Commodities logo.png" alt="logo da Atlantis" id="logo">
-        <nav class="navegacao">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Cadastrar-se</a></li>
-                <li><a href="">Governança</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <div class="nav-e-idioma">
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="#home" data-key="nav-home">Início</a></li>
+                    <li><a href="assets/html/sobre.html" data-key="nav-about">Sobre</a></li>
+                    <li><a href="" data-key="nav-signup">Cadastrar-se</a></li>
+                    <li><a href="" data-key="nav-governance">Governança</a></li>
+                    <li><a href="" data-key="nav-projects">Projetos</a></li>
+                    <li><a href="#contato" data-key="nav-contact">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Ícone de bandeira e nome do idioma -->
+            <div class="idioma" onclick="listaIdiomas()">
+                <img id="bandeira" src="assets/images/portugues.png" alt="Idioma" />
+                <p>PT-BR</p>
+                <span class="material-symbols-outlined">change_history</span>
+            </div>
+            
+            <!-- Lista de idiomas -->
+            <ul class="lista-idioma" style="opacity: 0;">
+                <li onclick="changeLanguage('pt')">
+                    <img src="assets/images/portugues.png" alt="portugues"> PT-BR
+                </li>
+                <li onclick="changeLanguage('en')">
+                    <img src="assets/images/ingles.png" alt="ingles"> EN-US
+                </li>
             </ul>
-        </nav>
-        <div class="idioma">
-            <p><img src="assets/images/portugues.png" alt="">PT-BR</p>
-            <span class="material-symbols-outlined">
-                change_history
-                </span>
-        </div>
+            
+
     </header>
+
     <main>
         <section id="home">
             <div class="container">
@@ -42,11 +56,10 @@
                     <div class="preto">
                         <div class="frase">
                             <div class="titulos">
-                                <h2>Nós temos a solução para seu negócio</h2>
-                                <h1>Conheça nosso trabalho de sucesso</h1>
+                                <h2 data-key="home-subtitle">Nós temos a solução para seu negócio</h2>
+                                <h1 data-key="home-main">Conheça nosso trabalho de sucesso</h1>
                             </div>
                         </div>
-            
                     </div>
                 </div>
                 <div class="overlay">
@@ -60,7 +73,7 @@
                             <a href=""><img src="assets/images/X.png" alt=""></a>
                             <a href=""><img src="assets/images/facebook.png" alt=""></a>
                         </div>
-                        <button>Venha Conhecer</button>
+                        <button id="home-button" data-key="home-button"><a href="#contato" id="texto">Venha Conhecer</a></button>
                     </div>
                 </div>
             </div>
@@ -69,54 +82,61 @@
         <section class="sobre">
             <div class="importacao padrao">
                 <img src="assets/images/importacao.png" alt="">
-                <h2>Importação</h2>
-                <p>realizamos a importação de mercadorias e matérias-primas de mercados internacionais para atender às necessidades locais com eficiência.</p>
+                <h2 data-key="about-import">Importação</h2>
+                <p data-key="about-import-description">Realizamos a importação de mercadorias e matérias-primas de mercados internacionais para atender às necessidades locais com eficiência.</p>
             </div>
             <div class="exportacao padrao">
                 <img src="assets/images/exportacao.png" alt="">
-                <h2>Exportação</h2>
-                <p> serviços completos de exportação, ajudando empresas a levar seus produtos ao mercado global.</p>
+                <h2 data-key="about-export">Exportação</h2>
+                <p data-key="about-export-description">Serviços completos de exportação, ajudando empresas a levar seus produtos ao mercado global.</p>
             </div>
         </section>
 
         <section class="empresas">
-            <h1>Empresas parceiras</h1>
+            <h1 data-key="partners-title">Empresas parceiras</h1>
             <div class="logos">
                 <div class="logos-slide">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png" alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png" alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png" alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
                 </div>
                 <div class="logos-slide">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities logo.png" alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png" alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png" alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png" alt="logo da atlantis" class="logo-empresa">
+                    <img src="assets/images/Atlantis Commodities.png " alt="logo da atlantis" class="logo-empresa">
                 </div>
             </div>
         </section>
 
         <section id="contato">
             <div class="interface">
-                <h1>Fale conosco!</h1>
+                <h1 data-key="contact-title">Fale conosco!</h1>
                 <form action="">
-                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Como podemos ajudar? Escreva sua mensagem." required></textarea>
-                    <input type="submit" value="Enviar" id="enviar">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required data-key="contact-name-placeholder">
+                    <input type="email" name="email" id="email" placeholder="Email" required data-key="contact-email-placeholder">
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="8" placeholder="Como podemos ajudar? Escreva sua mensagem." required data-key="contact-message-placeholder"></textarea>
+                    <input type="submit" value="Enviar" id="enviar" data-key="contact-submit">
                 </form>
             </div>
         </section>
+        
 
     </main>   
+
+    <footer>
+        <p data-key="footer">Atlantis Commodities © 2020.</p>
+    </footer>
+
+    <script src="assets/js/home-translate.js"></script>
 </body>
 </html>

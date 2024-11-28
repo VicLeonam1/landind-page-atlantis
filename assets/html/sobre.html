@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=change_history" />
+    <!-- Favicon e CSS -->
+     <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/sobre.css">
+    <title>Atlantis Commodities</title>
+</head>
+<body>
+    <header>
+        <img src="assets/images/Atlantis Commodities logo.png" alt="logo da Atlantis" id="logo">
+        <div class="nav-e-idioma">
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="/index.html" data-key="nav-home">Início</a></li>
+                    <li><a href="" data-key="nav-about">Sobre</a></li>
+                    <li><a href="" data-key="nav-signup">Cadastrar-se</a></li>
+                    <li><a href="" data-key="nav-governance">Governança</a></li>
+                    <li><a href="" data-key="nav-projects">Projetos</a></li>
+                    <li><a href="/index.html#contato" data-key="nav-contact">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Ícone de bandeira e nome do idioma -->
+            <div class="idioma" onclick="listaIdiomas()">
+                <img id="bandeira" src="/assets/images/portugues.png" alt="Idioma" />
+                <p>PT-BR</p>
+                <span class="material-symbols-outlined">change_history</span>
+            </div>
+            
+            <!-- Lista de idiomas -->
+            <ul class="lista-idioma" style="opacity: 0;">
+                <li onclick="changeLanguage('pt')">
+                    <img src="/assets/images/portugues.png" alt="portugues"> PT-BR
+                </li>
+                <li onclick="changeLanguage('en')">
+                    <img src="/assets/images/ingles.png" alt="ingles"> EN-US
+                </li>
+            </ul>
+    </header>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999999999999;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+  transition: 0.2s;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.3vw;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+header nav ul li:hover {
+  transform: scale(1.2);
+}
+
+header div.idioma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+header div.idioma p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  color: white;
+}
+
+header div.idioma img {
+  width: 50px;
+}
+
+header div.idioma .material-symbols-outlined {
+  overflow: hidden;
+  color: white;
+  transform: rotate(0deg);
+}
+
+.nav-e-idioma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-idioma {
+  opacity: 0;
+  position: fixed;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  transform: translateY(80px);
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  transition: opacity 0.3s ease;
+  width: 150px;
+}
+
+.lista-idioma li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lista-idioma li img {
+  width: 20px; 
+  margin-right: 10px; 
+}
+
+.lista-idioma li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Imagem de fundo */
+#atlantis {
+  width: 60%;
+}
+
+#imagem {
+  background: url("../images/naviocargueiro.jpg") no-repeat center / cover;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.preto {
+  background-color: rgba(0, 0, 0, 0.514);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.frase {
+  padding-left: 40%;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h2 {
+  font-size: 1.5vw;
+}
+
+h1 {
+  font-size: 2vw;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+.titulos {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+
+.overlay {
+  position: absolute;
+  width: 69%;
+  height: 100%;
+  background-color: #d9d9d9;
+  clip-path: polygon(0% 0%, 55% 0%, 100% 100%, 0% 100%);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  z-index: 3;
+}
+
+.overlay .botao {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  transform: translate(0, 100%);
+}
+
+.overlay .botao button {
+  font-size: 1.8vw;
+  padding: 15px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: 16%;
+  border: none;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.562);
+  background-color: #343434;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.overlay .botao button a {
+  color: white;
+  text-decoration: none;
+}
+
+.overlay .botao button:hover {
+  transform: scale(1.1);
+}
+
+.overlay .overlay-itens {
+  padding-left: 20px;
+}
+
+.overlay .redes-sociais {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 9%;
+  gap: 15px;
+}
+
+.overlay .redes-sociais a img {
+  display: block;
+  width: 50px;
+  margin: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.overlay .redes-sociais img:hover {
+  transform: scale(1.1);
+}
+
+section.sobre {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  background: url("../images/aviao.png") no-repeat center center / cover;
+}
+
+.padrao {
+  width: 500px;
+  color: #00a859;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.padrao h2 {
+  font-weight: bold;
+}
+
+.padrao p {
+  color: white;
+}
+
+.padrao img {
+  width: 300px;
+}
+
+section.empresas {
+  margin: 40px 0;
+  width: 100%;
+}
+
+.empresas h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #343434;
+  font-size: 40px;
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+  background-image: linear-gradient(to right, #d9d9d9, transparent);
+  content: "";
+  z-index: 88;
+}
+.logos::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  background-image: linear-gradient(to left, #d9d9d9, transparent);
+  content: "";
+  z-index: 88;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slide 55s infinite linear;
+}
+
+.logo-empresa {
+  margin: 0 40px;
+  width: 20vw;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#contato {
+  background: url("../images/contato.jpg") no-repeat left center / cover;
+  height: 800px;
+}
+
+.interface {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+
+#contato form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 50px;
+  margin: 20px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+}
+
+#contato h1 {
+  overflow: hidden;
+  margin-top: 30px;
+  font-size: 40px;
+  color: #00a859;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #003f22;
+}
+
+#contato form input {
+  padding: 20px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #d9d9d9;
+  font-weight: bold;
+}
+
+#contato form textarea {
+  background-color: #c9c9c9;
+  resize: none;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+}
+
+#contato form textarea::placeholder {
+  font-size: 20px;
+}
+
+#contato form #enviar {
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#contato form #enviar:hover {
+  background-color: #acacac;
+}
+
+footer {
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #343434;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #979797;
+  border-radius: 10px;
+}
