@@ -1,179 +1,247 @@
-@charset "UTF-8";
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    font-family: "Poppins", serif;
-  }
-
-body {
-    background: url(../images/container.jpg) no-repeat center center / cover;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  .container {
-    position: relative;
-    width: 100vw;
-    height: 100vh; 
-    overflow: hidden;
-  }
-  
-  #logo {
-    width: 40px;
-    height: 40px;
-  }
-  
-  header {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9999999999999;
-    background-color: rgba(0, 0, 0, 0.432);
-  }
-  
-  header nav ul {
-    list-style-type: none;
-  }
-  
-  header nav ul li {
-    display: inline-block;
-    padding: 0 20px;
-    transition: 0.2s;
-  }
-  
-  header nav ul li a {
-    text-decoration: none;
-    font-size: 1.3vw;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-  }
-  
-  header nav ul li:hover {
-    transform: scale(1.2);
-  }
-  
-  header div.idioma {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  header div.idioma p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
-    color: white;
-  }
-  
-  header div.idioma img {
-    width: 50px;
-  }
-  
-  header div.idioma .material-symbols-outlined {
-    overflow: hidden;
-    color: white;
-    transform: rotate(0deg);
-  }
-  
-  .nav-e-idioma {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .lista-idioma {
-    opacity: 0;
-    position: fixed;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    transform: translateY(80px);
-    right: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    transition: opacity 0.3s ease;
-    width: 150px;
-  }
-  
-  .lista-idioma li {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .lista-idioma li img {
-    width: 20px; 
-    margin-right: 10px; 
-  }
-  
-  .lista-idioma li:hover {
-    background-color: #f0f0f0;
-  }
-
-
-  main{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 600px;
-    margin: 5% auto;
-    width: 900px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.315);
-    backdrop-filter: blur(15px);
-    color: white;
-    border-radius: 20px;
-  }
-
-  div.texto p{
-    font-size: 15px;
-    text-shadow: 4px 4px 5px black;
-  }
-
-  main h1{
-    color: #04ac5c;
-    font-size: 60px;
-    text-shadow: 4px 4px 10px black;
-    padding: 10px;
-  }
-
-  div.documentos{
-    margin-top: 20px;
-    display: grid;
-    padding: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  div.documentos button p{
-    padding: 10px;
-    font-size: 20px;
-    color: #04ac5c;
-    cursor: pointer;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Poppins", serif;
 }
 
-div.documentos button{
-    border-radius: 20px;
-    border: none;
-    transition: .2s;
-  }
+body {
+  background: url(../images/container.jpg) no-repeat center center / cover;
+}
 
-  div.documentos button:hover{
-    transform: scale(1.1);
-    background-color: #ccc;
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999999999999;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+  transition: 0.2s;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.3vw;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+header nav ul li:hover {
+  transform: scale(1.2);
+}
+
+header div.idioma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+header div.idioma p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  color: white;
+}
+
+header div.idioma img {
+  width: 50px;
+}
+
+header div.idioma .material-symbols-outlined {
+  overflow: hidden;
+  color: white;
+  transform: rotate(0deg);
+}
+
+.nav-e-idioma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-idioma {
+  opacity: 0;
+  position: fixed;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  transform: translateY(80px);
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  transition: opacity 0.3s ease;
+  width: 150px;
+}
+
+.lista-idioma li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lista-idioma li img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.lista-idioma li:hover {
+  background-color: #f0f0f0;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+  margin: 5% auto;
+  width: 900px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.315);
+  backdrop-filter: blur(15px);
+  color: white;
+  border-radius: 20px;
+}
+
+div.texto p {
+  font-size: 15px;
+  text-shadow: 4px 4px 5px black;
+}
+
+main h1 {
+  color: #04ac5c;
+  font-size: 60px;
+  text-shadow: 4px 4px 10px black;
+  padding: 10px;
+}
+
+div.botoes-documentos {
+  margin-top: 20px;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+div.botoes-documentos button p {
+  padding: 10px;
+  font-size: 20px;
+  color: #04ac5c;
+  cursor: pointer;
+}
+
+div.botoes-documentos button {
+  border-radius: 20px;
+  border: none;
+  transition: .2s;
+}
+
+div.botoes-documentos button:hover {
+  transform: scale(1.1);
+  background-color: #ccc;
+}
+
+.imagens {
+  position: relative;
+  top: 0;
+  height: 100dvh;
+  margin: auto;
+  width: 800px;
+  overflow-y: scroll;
+  overflow-x: none;
+  border-radius: 10px;
+  padding: 1rem;
+  z-index: 22;
+}
+
+.imagens img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  user-select: none; 
+  pointer-events: none; 
+  -webkit-user-drag: none;
+}
+
+.funpreto {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.541);
+  z-index: 21;
+}
+
+#documento1, #documento2, #documento3, #documento4 {
+display: none; /* Todos os documentos começam invisíveis */
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro mais forte */
+z-index: 9999999999; /* Fica acima do fundo escuro */
+}
+
+#fechar {
+  position: fixed;
+  font-size: 60px;
+  top: 0;
+  left: 10px;
+  z-index: 33;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.material-symbols-outlined{
+  font-size: 50px;
+  padding: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #979797;
+  border-radius: 10px;
+}

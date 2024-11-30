@@ -40,7 +40,14 @@ const translations = {
     "governance-privacy-policy": "Privacy Policy",
     "governance-cookies-policy": "Cookie Policy",
     "governance-sustainability-policy": "Sustainability Policy",
-    "governance-esg-strategy": "ESG Strategy"
+    "governance-esg-strategy": "ESG Strategy",
+    "title": "Sign Up",
+    "placeholder-name": "Name",
+    "placeholder-email": "Email",
+    "label-date": "Date of Birth",
+    "label-phone": "Phone",
+    "placeholder-phone": "+XX (XX) XXXX-XXXX",
+    "button-submit": "Submit",
   },
   pt: {
     "nav-home": "Início",
@@ -82,7 +89,14 @@ const translations = {
     "governance-privacy-policy": "Política de Privacidade",
     "governance-cookies-policy": "Política de Cookies",
     "governance-sustainability-policy": "Política de Sustentabilidade",
-    "governance-esg-strategy": "Estratégia ESG"
+    "governance-esg-strategy": "Estratégia ESG",
+    "title": "Cadastrar-se",
+    "placeholder-name": "Nome",
+    "placeholder-email": "E-mail",
+    "label-date": "data de nascimento",
+    "label-phone": "telefone",
+    "placeholder-phone": "+XX (XX) XXXX-XXXX",
+    "button-submit": "Enviar"
   },
 };
 

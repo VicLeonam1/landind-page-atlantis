@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=change_history" />
     <!-- Favicon e CSS -->
     <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
@@ -14,20 +15,47 @@
     <title>Atlantis Commodities</title>
 </head>
 <body>
+    <a href="/index.html">
+        <span class="material-symbols-outlined">
+            arrow_back
+            </span>
+    </a>
+    <header>
+            <!-- Ícone de bandeira e nome do idioma -->
+            <div class="idioma" onclick="listaIdiomas()">
+                <img id="bandeira" src="/assets/images/portugues.png" alt="Idioma" />
+                <p>PT-BR</p>
+            </div>
+            
+            <!-- Lista de idiomas -->
+            <ul class="lista-idioma" style="opacity: 0;">
+                <li onclick="changeLanguage('pt')">
+                    <img src="/assets/images/portugues.png" alt="portugues"> PT-BR
+                </li>
+                <li onclick="changeLanguage('en')">
+                    <img src="/assets/images/ingles.png" alt="ingles"> EN-US
+                </li>
+            </ul>
+        </div>
+    </header>
     <main>
         <img src="../images/cadas-conteiner.jpg" alt="">
         <div class="formulario">
             <img src="../images/Atlantis Commodities 2.png" alt="">
-            <h1>Cadastrar-se</h1>
+            <h1 data-key="title">Cadastrar-se</h1>
             <form>
-                <input type="text" name="nome" id="nome">
-                <input type="email" name="email" id="email">
+                <input type="text" name="nome" id="nome" placeholder="Nome" required data-key="placeholder-name">
+                <input type="email" name="email" id="email" placeholder="E-mail" required data-key="placeholder-email">
                 <div class="data-num">
-                    <input type="date" name="data" id="data">
-                    <input type="tel" name="numero" id="numero">
+                    <label for="data" data-key="label-date">data de nascimento</label>
+                    <label for="numero" data-key="label-phone">telefone</label>
+                    <input type="date" name="data" id="data" required>
+                    <input type="tel" name="numero" id="numero" placeholder="+XX (XX) XXXX-XXXX" data-key="placeholder-phone">
                 </div>
+                <input type="submit" value="Enviar" id="enviar" data-key="button-submit">
             </form>
         </div>
     </main>
+    <script src="../js/translate.js"></script>
 </body>
 </html>

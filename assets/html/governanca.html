@@ -1,66 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=change_history" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
     <!-- Favicon e CSS -->
-    <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/gover.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/logo.ico" type="image/<span class="material-symbols-outlined">
+close
+</span>-icon" />
+    <link rel="stylesheet" href="../css/gover.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atlantis Commodities</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="/assets/images/Atlantis Commodities logo.png" alt="logo da Atlantis" id="logo">
-        <div class="nav-e-idioma">
-            <nav class="navegacao">
-                <ul>
-                    <li><a href="/index.html" data-key="nav-home">Início</a></li>
-                    <li><a href="sobre.html" data-key="nav-about">Sobre</a></li>
-                    <li><a href="governanca.html" data-key="nav-governance">Governança</a></li>
-                    <li><a href="" data-key="nav-projects">Projetos</a></li>
-                    <li><a href="cadastro.html" data-key="nav-signup">Cadastrar-se</a></li>
-                    <li><a href="/index.html#contato" data-key="nav-contact">Contato</a></li>
-                </ul>
-            </nav>
-            <!-- Ícone de bandeira e nome do idioma -->
-            <div class="idioma" onclick="listaIdiomas()">
-                <img id="bandeira" src="/assets/images/portugues.png" alt="Idioma" />
-                <p>PT-BR</p>
-                <span class="material-symbols-outlined">change_history</span>
-            </div>
-            
-            <!-- Lista de idiomas -->
-            <ul class="lista-idioma" style="opacity: 0;">
-                <li onclick="changeLanguage('pt')">
-                    <img src="/assets/images/portugues.png" alt="portugues"> PT-BR
-                </li>
-                <li onclick="changeLanguage('en')">
-                    <img src="/assets/images/ingles.png" alt="ingles"> EN-US
-                </li>
-            </ul>
+      <img
+        src="/assets/images/Atlantis Commodities logo.png"
+        alt="logo da Atlantis"
+        id="logo"
+      />
+      <div class="nav-e-idioma">
+        <nav class="navegacao">
+          <ul>
+            <li><a href="/index.html" data-key="nav-home">Início</a></li>
+            <li><a href="sobre.html" data-key="nav-about">Sobre</a></li>
+            <li>
+              <a href="governanca.html" data-key="nav-governance">Governança</a>
+            </li>
+            <li>
+              <a href="projetos.html" data-key="nav-projects">Projetos</a>
+            </li>
+            <li>
+              <a href="cadastro.html" data-key="nav-signup">Cadastrar-se</a>
+            </li>
+            <li>
+              <a href="/index.html#contato" data-key="nav-contact">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Ícone de bandeira e nome do idioma -->
+        <div class="idioma" onclick="listaIdiomas()">
+          <img id="bandeira" src="/assets/images/portugues.png" alt="Idioma" />
+          <p>PT-BR</p>
         </div>
+
+        <!-- Lista de idiomas -->
+        <ul class="lista-idioma" style="opacity: 0">
+          <li onclick="changeLanguage('pt')">
+            <img src="/assets/images/portugues.png" alt="portugues" /> PT-BR
+          </li>
+          <li onclick="changeLanguage('en')">
+            <img src="/assets/images/ingles.png" alt="ingles" /> EN-US
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-        <h1 data-key="gov-title">Governança</h1>
-        <div class="texto">
-            <p data-key="gov-text-1">A Atlantis adota políticas rigorosas de privacidade, sustentabilidade e ESG, alinhadas aos mais altos padrões nacionais e internacionais. Com base na responsabilidade socioambiental, inovação e governança, promovemos práticas éticas que garantem segurança de dados, preservação ambiental e inclusão.</p>
-            <p data-key="gov-text-2">Nosso compromisso é oferecer produtos e serviços que refletem valores éticos e responsabilidade, contribuindo para um impacto positivo na sociedade e no meio ambiente, enquanto fortalecemos a confiança com clientes e parceiros. A sustentabilidade e a inovação guiam nossas ações, consolidando a Atlantis como referência no mercado global.</p>
-        </div>
+      <h1 data-key="gov-title">Governança</h1>
+      <div class="texto">
+        <p data-key="gov-text-1">
+          A Atlantis adota políticas rigorosas de privacidade, sustentabilidade
+          e ESG, alinhadas aos mais altos padrões nacionais e internacionais.
+          Com base na responsabilidade socioambiental, inovação e governança,
+          promovemos práticas éticas que garantem segurança de dados,
+          preservação ambiental e inclusão.
+        </p>
+        <p data-key="gov-text-2">
+          Nosso compromisso é oferecer produtos e serviços que refletem valores
+          éticos e responsabilidade, contribuindo para um impacto positivo na
+          sociedade e no meio ambiente, enquanto fortalecemos a confiança com
+          clientes e parceiros. A sustentabilidade e a inovação guiam nossas
+          ações, consolidando a Atlantis como referência no mercado global.
+        </p>
+      </div>
 
-        <div class="documentos">
-            <button><p data-key="governance-privacy-policy">Política de Privacidade</p></button>
-            <button><p  data-key="governance-cookies-policy">Política de Cookies</p></button>
-            <button><p  data-key="governance-sustainability-policy">Política de Sustentabilidade</p></button>
-            <button><p data-key="governance-esg-strategy">Estratégia ESG</p></button>
-        </div>
+      <div class="botoes-documentos">
+        <button onclick="abrirDocumento(2)">
+          <p data-key="governance-privacy-policy">Política de Privacidade</p>
+        </button>
+        <button onclick="abrirDocumento(3)">
+          <p data-key="governance-cookies-policy">Política de Cookies</p>
+        </button>
+        <button onclick="abrirDocumento(4)">
+          <p data-key="governance-sustainability-policy">
+            Política de Sustentabilidade
+          </p>
+        </button>
+        <button onclick="abrirDocumento(1)">
+          <p data-key="governance-esg-strategy">Estratégia ESG</p>
+        </button>
+      </div>
     </main>
+    <div id="documento1">
+      <button id="fechar" onclick="fecharDocumento()"><span class="-symbmaterialols-outlined">
+close
+</span></button>
+      <div class="imagens">
+        <img src="../images/estreegs/page (1) - documento1.jpg" alt="" />
+        <img src="../images/estreegs/page (2) - documento1.jpg" alt="" />
+        <img src="../images/estreegs/page (3) - documento1.jpg" alt="" />
+      </div>
+      <div class="funpreto"></div>
+    </div>
+    <div id="documento2">
+      <button id="fechar" onclick="fecharDocumento()"><span class="material-symbols-outlined">
+close
+</span></button>
+      <div class="imagens">
+        <img src="../images/EstratÃ©gia-ESG_Atlantis/EstratÃ©gia ESG_Atlantis_page-0001.jpg" alt="" />
+        <img src="../images/EstratÃ©gia-ESG_Atlantis/EstratÃ©gia ESG_Atlantis_page-0002.jpg" alt="" />
+        <img src="../images/EstratÃ©gia-ESG_Atlantis/EstratÃ©gia ESG_Atlantis_page-0003.jpg" alt="" />
+      </div>
+      <div class="funpreto"></div>
+    </div>
+    <div id="documento3">
+      <button id="fechar" onclick="fecharDocumento()"><span class="material-symbols-outlined">
+close
+</span></button>
+      <div class="imagens">
+        <img src="../images/PolÃ_tica-de-Cookies_Atlantis/PolÃ_tica de Cookies_Atlantis_page-0001.jpg" alt="" />
+        <img src="../images/PolÃ_tica-de-Cookies_Atlantis/PolÃ_tica de Cookies_Atlantis_page-0002.jpg" alt="" />
+      </div>
+      <div class="funpreto"></div>
+    </div>
+    <div id="documento4">
+      <button id="fechar" onclick="fecharDocumento()"><span class="material-symbols-outlined">
+close
+</span></button>
+      <div class="imagens">
+        <img src="../images/PolÃ_tica-de-Sustentabilidade_Atlantis/PolÃ_tica de Sustentabilidade_Atlantis_page-0001.jpg" alt="" />
+        <img src="../images/PolÃ_tica-de-Sustentabilidade_Atlantis/PolÃ_tica de Sustentabilidade_Atlantis_page-0002.jpg" alt="" />
+        <img src="../images/PolÃ_tica-de-Sustentabilidade_Atlantis/PolÃ_tica de Sustentabilidade_Atlantis_page-0003.jpg" alt="" />
+        <img src="../images/PolÃ_tica-de-Sustentabilidade_Atlantis/PolÃ_tica de Sustentabilidade_Atlantis_page-0004.jpg" alt="" />
+        <img src="../images/PolÃ_tica-de-Sustentabilidade_Atlantis/PolÃ_tica de Sustentabilidade_Atlantis_page-0005.jpg" alt="" />
+        <img src="../images/PolÃ_tica-de-Sustentabilidade_Atlantis/PolÃ_tica de Sustentabilidade_Atlantis_page-0006.jpg" alt="" />
+      </div>
+      <div class="funpreto"></div>
+    </div>
 
     <script src="../js/translate.js"></script>
-</body>
+    <script src="../js/documentos.js"></script>
+  </body>
 </html>
