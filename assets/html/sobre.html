@@ -8,23 +8,22 @@
     <meta name="keywords" content="importação, exportação, commodities, negócios, matéria-prima, comércio internacional">
     <meta property="og:title" content="Sobre a Atlantis Commodities">
     <meta property="og:description" content="A Atlantis Commodities oferece soluções em importação e exportação de mercadorias, com compromisso com a qualidade e excelência.">
-    <meta property="og:image" content="/assets/images/Atlantis_Commodities_logo.png">
+    <meta property="og:image" content="https://www.seusite.com/assets/images/Atlantis_Commodities_logo.png">
     <meta property="og:url" content="https://www.seusite.com/sobre">
     <meta property="og:type" content="website">
-
+    <meta name="theme-color" content="#ffffff">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Favicon e CSS -->
     <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/sobre.css">
-    
     <title>Atlantis Commodities</title>
 </head>
 <body>
     <header>
-        <img src="/assets/images/Atlantis Commodities logo.png" alt="Logo da Atlantis" id="logo">
+        <img src="../images/Atlantis Commodities logo.png" alt="Logo da Atlantis Commodities" id="logo">
         <div class="nav-e-idioma">
             <nav class="navegacao">
                 <ul>
@@ -36,19 +35,16 @@
                     <li><a href="/index.html#contato" data-key="nav-contact">Contato</a></li>
                 </ul>
             </nav>
-            <!-- Ícone de bandeira e nome do idioma -->
             <div class="idioma" onclick="listaIdiomas()">
-                <img id="bandeira" src="/assets/images/portugues.png" alt="Idioma" />
+                <img id="bandeira" src="/assets/images/portugues.png" alt="Idioma">
                 <p>PT-BR</p>
             </div>
-            
-            <!-- Lista de idiomas -->
             <ul class="lista-idioma" style="opacity: 0;">
                 <li onclick="changeLanguage('pt')">
-                    <img src="/assets/images/portugues.png" alt="portugues"> PT-BR
+                    <img src="/assets/images/portugues.png" alt="Português"> PT-BR
                 </li>
                 <li onclick="changeLanguage('en')">
-                    <img src="/assets/images/ingles.png" alt="ingles"> EN-US
+                    <img src="/assets/images/ingles.png" alt="Inglês"> EN-US
                 </li>
             </ul>
         </div>
@@ -57,41 +53,34 @@
     <main>
         <section id="topo">
             <h1 data-key="about-title">SOBRE NÓS</h1>
-            <img src="/assets/images/Atlantis Commodities 2.png" alt="Imagem de Atlantis Commodities">
+            <img src="/assets/images/Atlantis Commodities 2.png" alt="Imagem da Atlantis Commodities" loading="lazy">
         </section>
-
         <section class="sobre">
             <div class="imagem"></div>
             <div class="texto-sobre">
-                <p data-key="about-description">
-                    Certa manhã, enquanto o sol se erguia lentamente sobre o mar...Certa manhã, enquanto o sol se erguia lentamente sobre o mar, um jovem chamado Elias observava o horizonte a partir do convés de um velho navio cargueiro. Desde criança, ele sonhava em desbravar o desconhecido, guiado apenas pelo brilho dourado do céu ao amanhecer. A bordo do navio, carregado com memórias e mercadorias, ele buscava algo mais valioso do que ouro: respostas.No céu, um avião rasgava as nuvens, deixando rastros brancos como linhas que dividiam o infinito. Elias se perguntava se lá em cima, as pessoas sentiam a mesma emoção que ele sentia ao navegar pelas águas profundas.Com o passar dos dias, o jovem descobriu que não era o destino que importava, mas sim as histórias colecionadas no caminho: os portos visitados, as conversas com estranhos e as noites estreladas que pareciam sussurrar segredos antigos. Elias compreendeu que, às vezes, o verdadeiro horizonte perdido estava dentro de nós mesmos, esperando para ser encontrado.
-                </p>
+                <p data-key="about-description">Certa manhã, enquanto o sol se erguia lentamente sobre o mar...</p>
             </div>
         </section>
-
         <section class="redes-sociais">
-            <a href=""><img src="../images/instagram.png" alt="Instagram"></a>
-            <a href=""><img src="../images/whatsapp.png" alt="WhatsApp"></a>
-            <a href=""><img src="../images/X.png" alt="X"></a>
-            <a href=""><img src="../images/facebook.png" alt="Facebook"></a>
+            <a href=""><img src="/assets/images/instagram.png" alt="Instagram" loading="lazy"></a>
+            <a href=""><img src="/assets/images/whatsapp.png" alt="WhatsApp" loading="lazy"></a>
+            <a href=""><img src="/assets/images/X.png" alt="Twitter" loading="lazy"></a>
+            <a href=""><img src="/assets/images/facebook.png" alt="Facebook" loading="lazy"></a>
         </section>
-
         <section id="areas-de-atuacao">
             <h1 data-key="areas-title">ÁREAS DE ATUAÇÃO</h1>
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="/assets/images/naviocargueiro.jpg" alt="Navio cargueiro">
+                    <img src="/assets/images/naviocargueiro.jpg" alt="Navio cargueiro" loading="lazy">
                     <p data-key="area1">Importação</p>
                 </div>
                 <div class="grid-item">
-                    <img src="/assets/images/aviao.png" alt="Avião">
+                    <img src="/assets/images/aviao.png" alt="Avião" loading="lazy">
                     <p data-key="area2">Exportação</p>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- Script de Tradução -->
-    <script src="../js/translate.js"></script>
+    <script src="../js/translate.js" defer></script>
 </body>
 </html>

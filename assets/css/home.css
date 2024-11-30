@@ -131,7 +131,7 @@ header div.idioma .material-symbols-outlined {
 }
 
 #imagem {
-  background: url("../images/naviocargueiro.jpg") no-repeat center / cover;
+  background: url("../images/naviocargueiro.png") no-repeat center / cover;
   width: 70%;
   height: 100%;
   position: absolute;
@@ -340,7 +340,7 @@ section.empresas {
 }
 
 #contato {
-  background: url("../images/contato.jpg") no-repeat left center / cover;
+  background: url("../images/contato.png") no-repeat left center / cover;
   height: 800px;
 }
 
