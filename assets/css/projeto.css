@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #d9d9d9;
+  background: url(../images/aviao2.jpg) no-repeat center center / cover;
 }
 
 html {
@@ -134,33 +134,41 @@ header div.idioma .material-symbols-outlined {
     border-radius: 40px 0px;
 }
   
+.container{
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.342);
+}
 .slider-wrapper {
-    overflow: hidden;
-    width: 100%; /* Torna o slider responsivo */
-    margin: auto;
-    padding: 60px;
+  height: 100%;
 }
 
-
 .slider-wrapper .swiper-pagination-bullet{
-    background: rgb(0, 0, 0);
-    
+  background: #04ac5c;
+  
 }
 
 .slider-wrapper .swiper-slide-button{
-    color: rgb(0, 0, 0);
-    z-index: 90;
+  color: #04ac5c;
+  z-index: 90;
+  font-weight: bold;
+}
+
+.card-list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 .card-item{
-    margin-top: 5%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
-    height: 400px;
-    background: url(../images/projeto.jpg);
+    height: 500px;
+    background: url(../images/projeto.png);
     border-radius: 40px 0px;
     padding: 10px;
+    width: 50%;
 }
 
 .card-item p{
@@ -171,6 +179,14 @@ header div.idioma .material-symbols-outlined {
 .card-item h1 , p{
     z-index: 2;
     color: white;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: #04ac5c;
+  text-shadow: 4px 4px 10px #002e1881;
+  margin: 0px 10px;
+  transform: scale(2);
+  z-index: 3;
 }
 
 ::-webkit-scrollbar {
