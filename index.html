@@ -119,11 +119,13 @@
         <section id="contato">
             <div class="interface">
                 <h1 data-key="contact-title">Fale conosco!</h1>
-                <form action="">
+                <form action="https://formsubmit.co/victorleonam18@gmail.com" method="POST">
                     <input type="text" name="nome" id="nome" placeholder="Nome" required data-key="contact-name-placeholder">
                     <input type="email" name="email" id="email" placeholder="Email" required data-key="contact-email-placeholder">
                     <textarea name="mensagem" id="mensagem" cols="40" rows="8" placeholder="Como podemos ajudar? Escreva sua mensagem." required data-key="contact-message-placeholder"></textarea>
                     <input type="submit" value="Enviar" id="enviar" data-key="contact-submit">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="/assets/html/obrigado.html">
                 </form>
             </div>
         </section>

@@ -43,7 +43,7 @@
         <div class="formulario">
             <img src="/assets/images/Atlantis Commodities 2.png" alt="">
             <h1 data-key="title">Cadastrar-se</h1>
-            <form>
+            <form action="https://formsubmit.co/victorleonam18@gmail.com" method="POST">
                 <input type="text" name="nome" id="nome" placeholder="Nome" required data-key="placeholder-name">
                 <input type="email" name="email" id="email" placeholder="E-mail" required data-key="placeholder-email">
                 <div class="data-num">
@@ -51,6 +51,8 @@
                     <label for="numero" data-key="label-phone">telefone</label>
                     <input type="date" name="data" id="data" required>
                     <input type="tel" name="numero" id="numero" placeholder="+XX (XX) XXXX-XXXX" data-key="placeholder-phone">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="/assets/html/obrigado.html">
                 </div>
                 <input type="submit" value="Enviar" id="enviar" data-key="button-submit">
             </form>
