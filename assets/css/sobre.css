@@ -138,8 +138,9 @@ body {
   }
 
   section#topo h1{
-    font-size: 150px;
+    font-size: 90px;
     font-weight: 300;
+    padding: 10px;
     color: #343434;
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.493);
   }
@@ -186,7 +187,7 @@ body {
   }
 
   section.redes-sociais a img{
-    width: 100px;
+    width: 65px;
     transition: .3s;
     filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.404));
   }
@@ -238,6 +239,14 @@ body {
     font-size: 1.3em;
     color: #555;
     margin: 0;
+}
+
+footer {
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #343434;
 }
 
 
