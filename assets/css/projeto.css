@@ -134,12 +134,11 @@ header div.idioma .material-symbols-outlined {
     border-radius: 40px 0px;
 }
   
-.container{
-  padding: 50px;
-  background-color: rgba(0, 0, 0, 0.342);
-}
+
 .slider-wrapper {
   height: 100%;
+  margin: 0 60px 35px;
+  overflow: hidden;
 }
 
 .slider-wrapper .swiper-pagination-bullet{
@@ -157,18 +156,18 @@ header div.idioma .material-symbols-outlined {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
 }
 
 .card-item{
+  user-select: none;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
     height: 500px;
-    background: url(../images/projeto.png);
+    background: url(../images/projeto.png) no-repeat center center / cover;
     border-radius: 40px 0px;
     padding: 10px;
-    width: 50%;
+  
 }
 
 .card-item p{
@@ -185,7 +184,7 @@ header div.idioma .material-symbols-outlined {
   color: #04ac5c;
   text-shadow: 4px 4px 10px #002e1881;
   margin: 0px 10px;
-  transform: scale(2);
+  transform: scale(1.4);
   z-index: 3;
 }
 

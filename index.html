@@ -1,140 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Meta Tags para SEO -->
-    <meta name="description" content="Atlantis Commodities - Importação e Exportação de mercadorias e matérias-primas com foco na eficiência e qualidade. Conheça nossos projetos e parcerias.">
-    <meta name="keywords" content="importação, exportação, commodities, negócios, empresas, parcerias">
-    <meta name="author" content="Atlantis Commodities">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Atlantis Commodities">
-    <meta property="og:description" content="Importação e Exportação de mercadorias e matérias-primas com foco na eficiência e qualidade. Conheça nossos projetos e parcerias.">
-    <meta property="og:url" content="https://www.atlantiscommodities.com">
-    <meta property="og:image" content="assets/images/Atlantis Commodities logo.png">
+    <meta
+      name="description"
+      content="Atlantis Commodities - Importação e Exportação de mercadorias e matérias-primas com foco na eficiência e qualidade. Conheça nossos projetos e parcerias."
+    />
+    <meta
+      name="keywords"
+      content="importação, exportação, commodities, negócios, empresas, parcerias"
+    />
+    <meta name="author" content="Atlantis Commodities" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Atlantis Commodities" />
+    <meta
+      property="og:description"
+      content="Importação e Exportação de mercadorias e matérias-primas com foco na eficiência e qualidade. Conheça nossos projetos e parcerias."
+    />
+    <meta property="og:url" content="https://www.atlantiscommodities.com" />
+    <meta
+      property="og:image"
+      content="assets/images/Atlantis Commodities logo.png"
+    />
 
     <!-- Favicon e CSS -->
-    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/home.css" />
 
     <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Atlantis Commodities</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="assets/images/Atlantis Commodities logo.png" alt="logo da Atlantis" id="logo">
-        <div class="nav-e-idioma">
-            <nav class="navegacao">
-                <ul>
-                    <li><a href="#home" data-key="nav-home">Início</a></li>
-                    <li><a href="assets/html/sobre.html" data-key="nav-about">Sobre</a></li>
-                    <li><a href="assets/html/governanca.html" data-key="nav-governance">Governança</a></li>
-                    <li><a href="/assets/html/projetos.html" data-key="nav-projects">Projetos</a></li>
-                    <li><a href="assets/html/cadastro.html" data-key="nav-signup">Cadastrar-se</a></li>
-                    <li><a href="#contato" data-key="nav-contact">Contato</a></li>
-                </ul>
-            </nav>
-            <!-- Ícone de bandeira e nome do idioma -->
-            <div class="idioma" onclick="listaIdiomas()">
-                <img id="bandeira" src="assets/images/portugues.png" alt="Idioma" />
-                <p>PT-BR</p>
-            </div>
-            
-            <!-- Lista de idiomas -->
-            <ul class="lista-idioma" style="opacity: 0;">
-                <li onclick="changeLanguage('pt')">
-                    <img src="assets/images/portugues.png" alt="portugues"> PT-BR
-                </li>
-                <li onclick="changeLanguage('en')">
-                    <img src="assets/images/ingles.png" alt="ingles"> EN-US
-                </li>
-            </ul>
+      <img
+        src="assets/images/Atlantis Commodities logo.png"
+        alt="logo da Atlantis"
+        id="logo"
+      />
+      <div class="nav-e-idioma">
+        <nav class="navegacao">
+          <ul>
+            <li><a href="#home" data-key="nav-home">Início</a></li>
+            <li>
+              <a href="assets/html/sobre.html" data-key="nav-about">Sobre</a>
+            </li>
+            <li>
+              <a href="assets/html/governanca.html" data-key="nav-governance"
+                >Governança</a
+              >
+            </li>
+            <li>
+              <a href="/assets/html/projetos.html" data-key="nav-projects"
+                >Projetos</a
+              >
+            </li>
+            <li>
+              <a href="assets/html/cadastro.html" data-key="nav-signup"
+                >Cadastrar-se</a
+              >
+            </li>
+            <li><a href="#contato" data-key="nav-contact">Contato</a></li>
+          </ul>
+        </nav>
+        <!-- Ícone de bandeira e nome do idioma -->
+        <div class="idioma" onclick="listaIdiomas()">
+          <img id="bandeira" src="assets/images/portugues.png" alt="Idioma" />
+          <p>PT-BR</p>
         </div>
+
+        <!-- Lista de idiomas -->
+        <ul class="lista-idioma" style="opacity: 0">
+          <li onclick="changeLanguage('pt')">
+            <img src="assets/images/portugues.png" alt="portugues" /> PT-BR
+          </li>
+          <li onclick="changeLanguage('en')">
+            <img src="assets/images/ingles.png" alt="ingles" /> EN-US
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="container">
-                <div id="imagem">
-                    <div class="preto">
-                        <div class="frase">
-                            <div class="titulos">
-                                <h2 data-key="home-subtitle">Nós temos a solução para seu negócio</h2>
-                                <h1 data-key="home-main">Conheça nosso trabalho de sucesso</h1>
-                            </div>
-                        </div>
-                    </div>
+      <section id="home">
+        <div class="container">
+          <div id="imagem">
+            <div class="preto">
+              <div class="frase">
+                <div class="titulos">
+                  <h2 data-key="home-subtitle">
+                    Nós temos a solução para seu negócio
+                  </h2>
+                  <h1 data-key="home-main">
+                    Conheça nosso trabalho de sucesso
+                  </h1>
                 </div>
-                <div class="overlay">
-                    <div class="overlay-itens">
-                        <img src="assets/images/Atlantis Commodities.png" alt="Logo Atlantis Commodities" id="atlantis">
-                    </div>
-                    <div class="botao">
-                        <div class="redes-sociais">
-                            <a href=""><img src="assets/images/instagram.png" alt="Instagram"></a>
-                            <a href=""><img src="assets/images/whatsapp.png" alt="WhatsApp"></a>
-                            <a href=""><img src="assets/images/X.png" alt="X"></a>
-                            <a href=""><img src="assets/images/facebook.png" alt="Facebook"></a>
-                        </div>
-                        <button id="home-button"><a href="#contato" data-key="home-button" id="texto">Venha Conhecer</a></button>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="overlay">
+            <div class="overlay-itens">
+              <img
+                src="assets/images/Atlantis Commodities.png"
+                alt="Logo Atlantis Commodities"
+                id="atlantis"
+              />
+            </div>
+            <div class="botao">
+              <div class="redes-sociais">
+                <a
+                  href="https://www.instagram.com/atlantiscommodities/"
+                  target="_blank"
+                  ><img src="/assets/images/instagram.png" alt="Instagram"
+                /></a>
 
-        <section class="sobre">
-            <div class="importacao padrao">
-                <img src="assets/images/importacao.png" alt="Importação de mercadorias">
-                <h2 data-key="about-import">Importação</h2>
-                <p data-key="about-import-description">Realizamos a importação de mercadorias e matérias-primas de mercados internacionais para atender às necessidades locais com eficiência.</p>
-            </div>
-            <div class="exportacao padrao">
-                <img src="assets/images/exportacao.png" alt="Exportação de mercadorias">
-                <h2 data-key="about-export">Exportação</h2>
-                <p data-key="about-export-description">Serviços completos de exportação, ajudando empresas a levar seus produtos ao mercado global.</p>
-            </div>
-        </section>
+                <a
+                  href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5591983385288%26text%3DOl%25C3%25A1%252C%2BTudo%2Bbem%2B%253F.%26fbclid%3DPAZXh0bgNhZW0CMTEAAab38O5h5ifkYuyOy2TE5LVMbsIlLYRVWZPeTodMSIn0Ib864bEKnB2Ynjw_aem_xbebXKjF8xCylrPAjPNnGQ&e=AT1UENQuMUBkJ2oGH9riiTDzSlYUtum7jVEPwpYxGwc0kif-xjrAH4lEHEtefnLYxIzswOIrR05GOJFe4Sjc_WSXBRUi4R3oAvqbS5yK7Z6bCQW0N7-KbfU"
+                  target="_blank"
+                  ><img src="/assets/images/whatsapp.png" alt="WhatsApp"
+                /></a>
 
-        <section class="empresas">
-            <h1 data-key="partners-title">Empresas parceiras</h1>
-            <div class="logos">
-                <div class="logos-slide">
-                    <img src="assets/images/Atlantis Commodities.png" alt="Logo da Atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities.png" alt="Logo da Atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities.png" alt="Logo da Atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities.png" alt="Logo da Atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities.png" alt="Logo da Atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities.png" alt="Logo da Atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities.png" alt="Logo da Atlantis" class="logo-empresa">
-                    <img src="assets/images/Atlantis Commodities.png" alt="Logo da Atlantis" class="logo-empresa">
-                </div>
-            </div>
-        </section>
+                <a href="https://x.com/AtlantisCommod1" target="_blank"
+                  ><img src="/assets/images/X.png" alt="Twitter"
+                /></a>
 
-        <section id="contato">
-            <div class="interface">
-                <h1 data-key="contact-title">Fale conosco!</h1>
-                <form action="https://formsubmit.co/victorleonam18@gmail.com" method="POST">
-                    <input type="text" name="nome" id="nome" placeholder="Nome" required data-key="contact-name-placeholder">
-                    <input type="email" name="email" id="email" placeholder="Email" required data-key="contact-email-placeholder">
-                    <textarea name="mensagem" id="mensagem" cols="40" rows="8" placeholder="Como podemos ajudar? Escreva sua mensagem." required data-key="contact-message-placeholder"></textarea>
-                    <input type="submit" value="Enviar" id="enviar" data-key="contact-submit">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://chic-sopapillas-f331c5.netlify.app/assets/html/obrigado">
-                </form>
+                <a
+                  href="https://www.facebook.com/atlantiscommoditiesbr"
+                  target="_blank"
+                  ><img src="/assets/images/facebook.png" alt="Facebook"
+                /></a>
+              </div>
+              <button id="home-button">
+                <a href="#contato" data-key="home-button" id="texto"
+                  >Venha Conhecer</a
+                >
+              </button>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="sobre">
+        <div class="importacao padrao">
+          <img
+            src="assets/images/importacao.png"
+            alt="Importação de mercadorias"
+          />
+          <h2 data-key="about-import">Importação</h2>
+          <p data-key="about-import-description">
+            Realizamos a importação de mercadorias e matérias-primas de mercados
+            internacionais para atender às necessidades locais com eficiência.
+          </p>
+        </div>
+        <div class="exportacao padrao">
+          <img
+            src="assets/images/exportacao.png"
+            alt="Exportação de mercadorias"
+          />
+          <h2 data-key="about-export">Exportação</h2>
+          <p data-key="about-export-description">
+            Serviços completos de exportação, ajudando empresas a levar seus
+            produtos ao mercado global.
+          </p>
+        </div>
+      </section>
+
+      <section class="empresas">
+        <h1 data-key="partners-title">Empresas parceiras</h1>
+        <div class="logos">
+          <div class="logos-slide">
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+          </div>
+
+          <div class="logos-slide">
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+            <img
+              src="assets/images/Atlantis Commodities.png"
+              alt="Logo da Atlantis"
+              class="logo-empresa"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="interface">
+          <h1 data-key="contact-title">Fale conosco!</h1>
+          <form
+            action="https://formsubmit.co/victorleonam18@gmail.com"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome"
+              required
+              data-key="contact-name-placeholder"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+              data-key="contact-email-placeholder"
+            />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="40"
+              rows="8"
+              placeholder="Como podemos ajudar? Escreva sua mensagem."
+              required
+              data-key="contact-message-placeholder"
+            ></textarea>
+            <input
+              type="submit"
+              value="Enviar"
+              id="enviar"
+              data-key="contact-submit"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://chic-sopapillas-f331c5.netlify.app/assets/html/obrigado"
+            />
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p data-key="footer">Atlantis Commodities © 2020.</p>
+      <p data-key="footer">Atlantis Commodities © 2020.</p>
     </footer>
 
     <script src="assets/js/translate.js"></script>
-</body>
+  </body>
 </html>
